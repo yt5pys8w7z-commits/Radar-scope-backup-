@@ -1,0 +1,106 @@
+IMPORTANT IMPLEMENTATION RULES:
+
+Do not describe intended architecture as success.
+Only treat the task as complete if the result is visually perceivable on the radar scope.
+
+Do not add new gameplay systems.
+Do not add decorative visuals.
+Do not add flow-color coding on the main scope.
+Do not add traffic-flow bands, gradients, or stylized corridor overlays.
+
+The main scope must remain a clean upper-area radar display:
+
+* dark background
+* traffic dominant
+* routes secondary
+* sector context subtle
+* no sci-fi styling
+* no glow-heavy effects
+* no decorative polygons
+
+If a requested visual element is not clearly visible in the rendered scope, the task is not complete.
+
+TASKS
+
+1. Velocity leader readability
+
+The velocity leader is currently too weak compared to the route structure.
+
+Adjust it so:
+
+* brighter than airway lines
+* dimmer than aircraft symbols
+* readable instantly
+* still subtle
+* no glow
+* no neon effect
+* no thick lines
+
+Goal:
+The player must immediately understand movement direction.
+
+2. Airport symbology
+
+Add subtle radar-style airport symbols for:
+
+* EHAM
+* EDDM
+* LFPG/LFFF region
+* EGPX feed
+* EDGG feed
+
+Rules:
+
+* very low visual weight
+* readable at all zoom levels
+* radar-style geometry only
+* no map icons
+* no decorative airport graphics
+* must not compete with traffic
+
+Purpose:
+The player should instantly understand:
+
+* where traffic originates
+* where flows terminate
+* upstream/downstream system structure
+
+3. Sector topology readability
+
+Upstream/downstream sectors are still not cognitively readable.
+
+Requirements:
+
+* routes must visibly continue beyond the owned sector
+* external sectors must feel connected to a larger operational network
+* upstream/downstream directionality must be immediately understandable
+* sector ownership must feel operational, not geometric
+
+Do NOT solve this with:
+
+* colored overlays
+* corridor fills
+* gradients
+* decorative polygons
+
+Solve through:
+
+* topology
+* route continuation
+* spacing
+* structure
+* entry/exit organization
+
+4. Label leader line
+
+Leader lines must:
+
+* originate from the actual radar target/RPS symbol
+* terminate at the datablock edge
+* remain subtle
+* remain operationally readable
+
+No floating labels.
+No disconnected labels.
+No decorative framing.
+No heavy boxes around datablocks.

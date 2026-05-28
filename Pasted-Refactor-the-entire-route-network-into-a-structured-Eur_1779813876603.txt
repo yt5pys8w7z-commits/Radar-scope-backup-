@@ -1,0 +1,86 @@
+Refactor the entire route network into a structured European upper-area flow system.
+
+Current problem:
+the route network behaves like a spiderweb where every fix connects to every other fix.
+This destroys:
+- flow readability
+- anticipation
+- sector structure
+- realistic traffic behavior
+
+New design philosophy:
+traffic must move through organized directional flow corridors.
+
+CORE FLOW STRUCTURE
+
+1. Dominant Eastbound Flows
+Create several major WEST → EAST traffic corridors.
+
+Example style:
+- WEST → KOK → PAM → XAMAN → EAST
+- WEST → SPY → REMBA → SOUTH-EAST
+
+These should represent stable overflight streams.
+
+2. Dominant Westbound Flows
+Create opposite EAST → WEST corridors using:
+- different lanes
+- different flight level bands
+- partial parallel routing
+
+These should feel like organized counterflows.
+
+3. North/South Crossing Flows
+Add smaller NORTH ↕ SOUTH flows that:
+- intersect main east/west streams
+- create tactical conflict hotspots
+- mainly cross near PAM and SPY
+
+4. PAM and SPY as Central Nodes
+PAM and SPY should become:
+- major merge points
+- crossing points
+- tactical workload hotspots
+- cognitive anchors for the player
+
+5. Route Behavior
+Aircraft should:
+- follow structured airway-like corridors
+- remain inside organized streams by default
+- only deviate through:
+  - directs
+  - headings
+  - tactical intervention
+
+6. Gameplay Goals
+Player should start recognizing:
+- traffic streams
+- merge pressure
+- crossing geometry
+- downstream instability
+- future workload buildup
+
+NOT:
+individual random aircraft movement.
+
+7. Visual Goals
+The route network should visually feel:
+- directional
+- corridor-based
+- layered
+- structured
+- readable at a glance
+
+NOT:
+a random graph or web.
+
+8. Important
+- preserve realism-inspired abstraction
+- do not use full real-world nav databases
+- avoid excessive route density
+- maintain clean readability
+- preserve upper-area operational atmosphere
+
+Design target:
+a living structured European-style upper-area flow network
+with calm major streams and localized tactical conflict zones.

@@ -1,0 +1,64 @@
+Fix visual airspace readability and route topology.
+
+Current problems:
+1. upstream/downstream sectors are not visually distinguishable
+2. routes do not clearly continue into upstream/downstream sectors
+3. PAM/SPY configuration is too compressed and not well spread
+4. some routes are illogical, for example AGEKU → REMBA
+5. route color is too white/bright
+6. label state colors are not clear enough
+
+Required changes:
+
+1. Upstream / downstream sectors
+- create clearly visible adjacent sector areas around the owned sector
+- show sector names such as EGPX, EHAM, EDMM, EDGG, LFFF, LFRR in their areas
+- use subtle shaded sector blocks, not just text labels
+- owned sector must remain visually primary
+- adjacent sectors must be readable but secondary
+
+2. Route continuity
+- routes must visibly continue into adjacent upstream/downstream sectors
+- routes should not stop at the owned sector boundary
+- traffic should appear to come from and go to named adjacent sectors
+- create entry and exit corridors that connect to these sector blocks
+
+3. Rebuild PAM / SPY layout
+- spread PAM and SPY traffic geometry more naturally
+- avoid all routes converging too tightly into one star/web
+- create separate corridors:
+  - PAM as northern / central overflight merge
+  - SPY as southern / crossing / arrival interaction node
+- keep some interaction between PAM and SPY, but avoid every flow using both
+
+4. Remove illogical route legs
+- remove strange route legs such as AGEKU → REMBA
+- routes should follow believable directional flow
+- no random reverse legs
+- no spiderweb connections
+- no fix-to-fix graph behavior
+
+5. Route visual style
+- route lines should not be bright white
+- use muted low-contrast blue/grey
+- active/projected route can be slightly brighter
+- background routes should remain subtle
+
+6. Label color clarity
+- unidentified tracks: muted grey/blue
+- identified/owned tracks: clear green/cyan
+- pending actions: muted amber
+- STCA: clear amber/red
+- labels should be readable without feeling arcade-like
+
+7. Cognitive target
+Within 2 seconds the player should see:
+- this is my sector
+- these are adjacent sectors
+- traffic enters from here
+- traffic exits there
+- PAM and SPY are meaningful but distinct nodes
+- routes are corridors, not a spiderweb
+
+Do not add new gameplay systems.
+This is a visual topology/readability correction only.

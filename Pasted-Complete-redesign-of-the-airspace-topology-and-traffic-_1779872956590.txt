@@ -1,0 +1,117 @@
+Complete redesign of the airspace topology and traffic flow architecture.
+
+Current problem:
+the sector still feels like isolated random traffic moving through a graph network.
+
+The sector must instead feel like:
+- part of a larger European upper-area system
+- connected to upstream and downstream sectors
+- structured around organized traffic flows
+
+1. Upstream / Downstream Logic
+Routes must:
+- originate from upstream sectors
+- terminate into downstream sectors
+- feel connected to larger traffic systems beyond the visible sector
+
+Traffic should never feel:
+- randomly spawned
+- isolated
+- disconnected from the network
+
+2. Sector Group Structure
+Create clear sector-group identities.
+
+Example philosophy:
+- North/West sectors:
+  UK/oceanic overflight feed
+- East sectors:
+  Germany/Poland flow
+- South sectors:
+  Belgium/France/EHAM interaction
+
+Traffic flows should visibly belong to different regional systems.
+
+3. Major Directional Flows
+Build several dominant traffic corridors:
+- WEST → EAST overflight streams
+- EAST → WEST counterflows
+- NORTH ↕ SOUTH crossing flows
+
+These flows should:
+- remain mostly stable
+- use structured airway-like corridors
+- create recognizable traffic streams
+
+4. PAM and SPY as Core Flow Nodes
+PAM and SPY should become:
+- central merge points
+- crossing hotspots
+- cognitive anchors
+- tactical workload zones
+
+Most important traffic interactions should naturally emerge around these areas.
+
+5. Flight Level Allocation Structure (FLAS)
+Add directional flight level structure logic.
+
+Example philosophy:
+- eastbound traffic prefers one FL band structure
+- westbound traffic prefers opposite FL bands
+
+Goal:
+traffic direction should become visually readable through altitude organization.
+
+6. Conditional Routes (CDRs)
+Add simplified conditional route logic.
+
+Requirements:
+- some routes are only available when military airspace is inactive
+- when military activity activates:
+  - CDR routes close
+  - traffic automatically reroutes through standard corridors
+
+Goal:
+create dynamic but understandable topology changes.
+
+7. Route Philosophy
+Avoid:
+- spiderweb routing
+- every fix connected to every fix
+- random graph movement
+
+Instead create:
+- corridor-based flow systems
+- merge points
+- diverge points
+- stable traffic streams
+- predictable geometry
+
+8. Cognitive Gameplay Goal
+Player should start thinking:
+- “this flow is becoming unstable”
+- “PAM eastbound is building pressure”
+- “south crossing will interfere with arrival stream”
+
+NOT:
+- “what is this random aircraft doing?”
+
+9. Visual Goals
+At a glance the player should recognize:
+- dominant flows
+- sector identities
+- major crossings
+- upstream/downstream traffic
+- strategic hotspots
+
+10. Important
+- preserve readability
+- preserve clean upper-area style
+- avoid route over-density
+- keep abstractions operational and believable
+- prioritize traffic cognition over realism overload
+
+Design target:
+a living European-style upper-area traffic ecosystem
+with structured directional flows, recognizable sector personalities,
+and emergent operational pressure points.

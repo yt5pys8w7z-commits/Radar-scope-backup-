@@ -1,0 +1,115 @@
+Refactor the sector ownership rendering and traffic readability toward a true upper-area radar aesthetic.
+
+Current problem:
+the sector boundary reads like a thick geometric object instead of controlled airspace.
+Traffic flows still do not visually emerge from the screen.
+
+1. Sector Boundary Redesign
+Replace the current thick blue polygon styling.
+
+Requirements:
+- thin muted sector boundary lines
+- professional radar appearance
+- no heavy glowing polygon
+- no thick blue outline
+- no game-like geometry
+
+Goal:
+the sector should feel like controlled airspace,
+not a selectable object.
+
+2. Sector Ownership Shading
+Introduce subtle sector ownership shading.
+
+Requirements:
+- inside owned sector slightly brighter
+- outside sectors subtly dimmed/desaturated
+- aircraft remain readable everywhere
+- infrastructure outside sector remains visible
+
+Important:
+ownership should primarily be communicated through:
+- shading
+- contrast
+- visual weight
+
+NOT:
+- thick outlines
+
+3. Remove Artificial Polygon Feeling
+The sector should visually blend into the larger airspace system.
+
+Avoid:
+- isolated boxed appearance
+- hard-edged arcade polygons
+- “map object” feeling
+
+Desired feel:
+European upper-area radar environment.
+
+4. Traffic Corridors Must Become Visible Through Geometry
+Do NOT rely on route colors yet.
+
+Traffic flows should emerge naturally through:
+- aircraft clustering
+- shared route trunks
+- directional movement
+- merge points
+- spacing patterns
+
+The player should visually notice:
+- “there is a west-east stream”
+- “PAM is building pressure”
+- “north-south crossing is interfering”
+
+without needing labels or color coding.
+
+5. Entry Funnel Structure
+Strengthen route bundling before merge points.
+
+Instead of:
+- aircraft arriving evenly distributed across the boundary
+
+Create:
+- concentrated entry funnels
+- corridor compression
+- structured convergence
+
+Goal:
+traffic should behave like organized streams,
+not isolated aircraft.
+
+6. Route Backbone Philosophy
+Many flights should share:
+- the same airway trunk
+- the same merge structure
+- the same crossing geometry
+
+Avoid:
+- every aircraft using visibly unique geometry
+- spiderweb appearance
+- random crossings everywhere
+
+7. Keep Current Route Logic
+Do NOT redesign:
+- FLAS
+- CDR logic
+- upstream/downstream concepts
+- LNAV logic
+
+Those systems are good.
+
+This task is purely:
+- visual cognition
+- flow readability
+- corridor perception
+- ownership feeling
+
+8. Desired Cognitive Result
+Within 2–3 seconds the player should intuitively understand:
+- which airspace is theirs
+- where the main traffic streams are
+- where pressure is building
+- where future conflicts may emerge
+
+without reading detailed labels.
